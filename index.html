@@ -21,63 +21,98 @@
   background-color: transparent;
   text-decoration: none;
 }
-a:visited {
+h6:visited {
   color: rgb(255, 0, 43);
   background-color: transparent;
   text-decoration: none;
 }
-a:hover {
+h6:hover {
   color: rgb(255, 168, 168);
   background-color: transparent;
   text-decoration: underline;
+  cursor: grab;
 }
-a:active {
+h6:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+  cursor: grabbing;
 }
 h1 {
   border-bottom-style: solid;
   border-bottom-color: rgb(255, 80, 80);
 }
 	</style>
+	<script>
+		function atvertBildi1(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/1_anonims1.jpg'>";
+			document.getElementById("vards1").style.color="rgb(255, 0, 43)";
+		}
+		function atvertBildi2(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/2_anonims2.jpg'>";
+			document.getElementById("vards2").style.color="rgb(255, 0, 43)";
+			console.log("ir")
+		}
+		function atvertBildi3(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/3_madara_arata_vizule.jpg'>";
+			document.getElementById("vards3").style.color="rgb(255, 0, 43)";
+		}
+		function atvertBildi4(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/4_dana_dallari.jpg'>";
+			document.getElementById("vards4").style.color="rgb(255, 0, 43)";
+		}
+		function atvertBildi5(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/5_liga_cirka.jpg'>";
+			document.getElementById("vards5").style.color="rgb(255, 0, 43)";
+		}
+		function atvertBildi6(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/6_eduards_amats.jpg'>";
+			document.getElementById("vards6").style.color="rgb(255, 0, 43)";
+		}
+		function atvertBildi7(){
+			document.getElementById("bildesVieta").innerHTML="<img src='./images/7_rudis_ricards_skurba.jpg'>";
+			document.getElementById("vards7").style.color="rgb(255, 0, 43)";
+		}
+	</script>
+
+
 <body> 
 	<div class="container-fluid p-4 bg-white text-black text-center">
 		<div class="shadow p-3 mb-5 bg-body rounded">
-	  <h1>Durch Sprachen in die weiter Welt</h1>
+	  <h1>Durch Sprachen in die weite Welt</h1>
 	  <p>Ar valodām plašajā pasaulē</p> 
 
 	</div>
 	<div class="container mt-5">
 		<div class="row">
 			<div class="col-sm-12">
-				<h4 class="text-center">RAĢ visusskolēnu projektu apkopojums</h4>
+				<h4 class="text-center">RAĢ vidusskolēnu projektu apkopojums</h4>
+				<br>
 				<br>
 			</div>
 		</div>
 	</div>
+
 	<div class="container"; id="example1">
 		<div class="row">
 		  <div class="col-sm-4">
 			<h3>Vācu valoda</h3>
-			<a id="ET"href="./images/1_anonims1.jpg">Anonīms-1</a>
-			<br>
-			<a id="ET"href="./images/2_anonims2.jpg">Anonīms-2</a>
- 		</div>
+			<h6 id="vards1" onclick="atvertBildi1()">Anonīms skolēns</h6>
+			<h6 id="vards2" onclick="atvertBildi2()">Anonīms skolēns</h6>
+ 		</div class="row">
 		  <div class="col-sm-4">
 			<h3>Angļu valoda</h3>
-			<a id="ET"href="./images/3_madara_arata_vizule.jpg">Madara Arta Vizule</a>
-            <br>
-            <a id="ET"href="./images/4_dana_dallari.jpg">Dana Dallari</a>
-			<br>
-            <a id="ET"href="./images/5_liga_cirka.jpg">Līga Čirka</a>
+			<h6 id="vards3" onclick="atvertBildi3()">Madara Arta Vizule</h6>
+            <h6 id="vards4" onclick="atvertBildi4()">Dana Dallari</h6>
+            <h6 id="vards5" onclick="atvertBildi5()">Līga Čirka</h6>
 		  </div>
 		  <div class="col-sm-4">
 			<h3>Vairākas valodas</h3>        
-			<a id="ET"href="./images/6_eduards_amats.jpg">Eduards Amats</a>
-			<br>
-            <a id="ET"href="./images/7_rudis_ricards_skurba.jpg">Rūdis Ričards Skurba</a>
-			<br>
+			<h6 id="vards6" onclick="atvertBildi6()">Eduards Amats</h6>
+            <h6 id="vards7" onclick="atvertBildi7()">Rūdis Ričards Skurba</h6>
+		  </div>
+		  <div id="bildesVieta" class="row">
+
 		  </div>
 		</div>
 	  </div>
